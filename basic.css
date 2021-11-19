@@ -1,0 +1,10 @@
+/* ====== 版面設定 ====== */
+
+*{
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /*外層高度100%*/
+  margin: 0;
+}
