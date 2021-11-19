@@ -113,7 +113,7 @@ header h4{
 .card{
     width: 300px;
     margin: 15px 15px;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.726);
     transition: all .3s ease;
@@ -121,7 +121,6 @@ header h4{
 
 .card:hover{
     box-shadow: 0 25px 18px rgba(0, 0, 0, 0.555);
-    border-radius: 20px;
 }
 
 .card-img{
