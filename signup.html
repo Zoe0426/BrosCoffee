@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊會員-Bros Coffee</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- fontAwosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./basic.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <nav class="desktop-nav2">
+        <div class="logo2">
+        <a href="./index.html">
+            <h1>Bros Coffee</h1>
+        </a>
+        </div>
+        <div class="navbar-list2">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/broscoffeeshop/" target="_blank">最新消息</a>
+                </li>      
+                <li>
+                    <a href="#">所有商品
+                    <i class="fas fa-sort-down icon-arrowDown"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">門市資訊
+                    <i class="fas fa-sort-down icon-arrowDown"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <i class="fas fa-user icon-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search icon-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart icon-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="user">
+        <h1>會員中心</h1>
+        <div class="reg">
+            <form action="./index.html">
+              <h3>註冊帳號</h3>
+              <p>
+                  <label for="reg-mail">電子郵件<span class="keyword">*</span></label>
+                  <input type="emil" name="mail" id="reg-mail">
+              </p>
+              <p>
+                  <label for="reg-password">密碼<span class="keyword">*</span></label>
+                  <input type="password" name="password" id="reg-password">
+              </p>
+              <p>
+                <label for="name">姓名<span class="keyword">*</span></label>
+                <input type="text" name="name" id="name">
+              </p>
+              <p>
+                <label for="sex">姓別<span class="keyword">*</span></label>
+                <span class="sex">
+                <input type="radio" name="sex" value="male" class="male">男
+                <input type="radio" name="sex" value="female" class="female">女
+                </span>
+              </p>
+              <p>
+                <label for="birthday">出生日期</label>
+                <input type="date" name="birthday" id="birthday">
+              </p>
+              <p>
+                <label for="city">縣 / 市<span class="keyword">*</span></label>
+                <select name="city" id="city" placeholder="選擇一個選項">
+                    <option value="選擇一個選項">選擇一個選項</option>
+                    <option value="台北市">台北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="臺中市">臺中市</option>
+                    <option value="臺南市">臺南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="新竹縣">新竹縣</option>  
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="臺東縣">臺東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                    <option value="金門縣">金門縣</option>
+                    <option value="連江縣">連江縣</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="嘉義市">嘉義市</option>
+                </select>
+              </p>
+              <p>
+                <label for="address">地址<span class="keyword">*</span></label>
+                <input type="text" name="address" id="address" placeholder="街道地址">
+              </p>
+              <p>
+                <label for="tele">市內電話</label>
+                <input type="text" name="tele" id="tele">
+              </p>
+              <p>
+                <label for="mobile">手機<span class="keyword">*</span></label>
+                <input type="text" name="mobile" id="mobile">
+              </p>
+              <p>
+                <input type="submit" name="reg-btn" value="註冊" class="reg-btn">
+              </p>
+            </form>
+        </div>
+
+    </section>
+</div>    
+    <footer class="footer-main">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/broscoffeeshop/" target="_blank"><i class="fab fa-facebook-square icon-socialMedia"></i></a>    
+            </li>
+            <li>
+                <a href="https://www.instagram.com/broscoffeeshop/" target="_blank"><i class="fab fa-instagram-square icon-socialMedia"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-line icon-socialMedia"></i></a>
+            </li>
+        </ul>       
+    </footer>
+    <footer class="footer-copyright">© 2021 BrosCoffee. All rights reserved. Design by Gabrielle</footer>
+    <div class="chat-box"><i class="fas fa-comment icon-chat"></i>chat</div>
+</body>
