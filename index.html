@@ -25,6 +25,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="./JavaScript/main.js"></script> 
 
     <link rel="stylesheet" href="./basic.css">
     <link rel="stylesheet" href="./style.css">
@@ -32,22 +38,34 @@
 </head>
 <body>
 <div class="wrapper">    
-    <nav class="desktop-nav">
-        <div class="logo">
+    <nav class="desktop-nav-index">
+        <div class="logo-index">
             <h1><a href="./index.html">Bros Coffee</a></h1>
         </div>
-        <div class="navbar-list">
-            <ul>
+        <div class="navbar-list-index">
+            <ul class="menu">
                 <li>
                     <a href="https://www.facebook.com/broscoffeeshop/" target="_blank">最新消息</a>
                 </li>      
                 <li>
-                    <a href="#">所有商品</a>
-                    <i class="fas fa-sort-down icon-arrowDown"></i>
+                    <a href="#">所有商品<i class="fas fa-sort-down icon-arrowDown"></i></a>
+                    <ul class="dropdown-index">
+                        <div class="dropdown-hover-index">
+                        <li><a href="#">單品豆</a></li>
+                        <li><a href="#">配方豆</a></li>
+                        <li><a href="#">濾掛包</a></li>
+                        <li><a href="#">周邊商品</a></li>
+                        </div>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">門市資訊</a>
-                    <i class="fas fa-sort-down icon-arrowDown"></i>
+                    <a href="#">門市資訊<i class="fas fa-sort-down icon-arrowDown"></i></a>
+                    <ul class="dropdown-index">
+                        <div class="dropdown-hover-index">
+                        <li><a href="#">找門市</a></li>
+                        <li><a href="#">找菜單</a></li>
+                        </div>
+                    </ul>
                 </li>
                 <li>
                     <a href="./login.html">
@@ -67,6 +85,20 @@
             </ul>
         </div>
     </nav>
+    <div class="ad">
+        <div class="title-ad">反詐騙提醒</div>
+        <div class="close-ad"><i class="fa-solid fa-circle-xmark"></i></div>
+        <p>
+            鑑於近日詐騙集團猖獗，提醒您<br>
+            BrosCoffee不會主動致電核對個資<br>
+            不會要求ATM匯款、不會要求線上轉帳<br>
+            沒有會員升級方案、亦沒有刷卡錯誤。
+        </p>
+        <p>
+            接獲可疑電話請直接接掛斷<br>
+            並打165反詐騙專線報案
+        </p>
+    </div>
     <header>
         <div class="jumbotron">
             <h1>Bros Coffee</h1>
@@ -140,24 +172,23 @@
         </div>
         <div class="products-text">            
             <div class="products-item">
-                <div class="products-name"><span><a href="#">單品豆</a></span></div>
+                <div class="products-name1 animate__animated"><a href="#">單品豆</a></div>
                 <h3>風味旅程 當季首選</h3>
             </div>
             <div class="products-item">
-                <div class="products-name"><a href="#">配方豆</a></div>
+                <div class="products-name2 animate__animated"><a href="#">配方豆</a></div>
                 <h3>甜蜜烘焙 獨家風味</h3>
             </div>
             <div class="products-item">
-                <div class="products-name"><a href="#">濾掛包</a></div>
+                <div class="products-name3 animate__animated"><a href="#">濾掛包</a></div>
                 <h3>狂銷熱賣 小資首選</h3>
             </div>
             <div class="products-item">
-                <div class="products-name"><a href="#">周邊商品</a></div>
+                <div class="products-name4 animate__animated"><a href="#">周邊商品</a></div>
                 <h3>繽紛時尚 引領潮流</h3>
             </div>   
         </div>
     </section>
-</div>    
     <footer class="footer-main">
         <ul>
             <li>
@@ -173,5 +204,6 @@
     </footer>
     <footer class="footer-copyright">© 2021 BrosCoffee. All rights reserved. Design by Gabrielle</footer>
     <div class="chat-box"><i class="fas fa-comment icon-chat"></i>chat</div>
+</div>
 </body>
 </html>

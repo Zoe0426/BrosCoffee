@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入會員-Bros Coffee</title>
+    <title>Bros Coffee</title>
+
+    <meta name="description" content="用咖啡開啟美好生活 Have a nice day">
+    <meta name="keyword" content="Bros,咖啡,外帶">
+
+    <meta property="og:title" content="Bros Coffee">
+    <meta property="og:description" content="用咖啡開啟美好生活 Have a nice day">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zoe0426.github.io/BrosCoffee/">
+    <meta property="og:image" content="https://i.imgur.com/pz7bF25.png">
+    <meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">     
+    <link rel="shortcut icon" href="./img/favicon.png" sizes="64x64">
     <!-- normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- fontAwosome -->
@@ -13,6 +25,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="./JavaScript/main.js"></script> 
 
     <link rel="stylesheet" href="./basic.css">
     <link rel="stylesheet" href="./style.css">
@@ -20,26 +38,36 @@
 </head>
 <body>
 <div class="wrapper">
-    <nav class="desktop-nav2">
-        <div class="logo2">
+    <nav class="desktop-nav">
+        <div class="logo">
         <a href="./index.html">
             <h1>Bros Coffee</h1>
         </a>
         </div>
-        <div class="navbar-list2">
-            <ul>
+        <div class="navbar-list">
+            <ul class="menu">
                 <li>
                     <a href="https://www.facebook.com/broscoffeeshop/" target="_blank">最新消息</a>
                 </li>      
                 <li>
-                    <a href="#">所有商品
-                    <i class="fas fa-sort-down icon-arrowDown"></i>
-                    </a>
+                    <a href="#">所有商品<i class="fas fa-sort-down icon-arrowDown"></i></a>
+                    <ul class="dropdown">
+                        <div class="dropdown-hover">
+                        <li><a href="#">單品豆</a></li>
+                        <li><a href="#">配方豆</a></li>
+                        <li><a href="#">濾掛包</a></li>
+                        <li><a href="#">周邊商品</a></li>
+                        </div>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">門市資訊
-                    <i class="fas fa-sort-down icon-arrowDown"></i>
-                    </a>
+                    <a href="#">門市資訊<i class="fas fa-sort-down icon-arrowDown"></i></a>
+                    <ul class="dropdown">
+                        <div class="dropdown-hover">
+                        <li><a href="#">找門市</a></li>
+                        <li><a href="#">找菜單</a></li>
+                        </div>
+                    </ul>
                 </li>
                 <li>
                     <a href="./login.html">
@@ -60,6 +88,7 @@
         </div>
     </nav>
     <section class="user">
+    <div class="contain">
         <h1>會員中心</h1>
     <form action="./index.html">
         <p>
@@ -76,9 +105,9 @@
             <li><a href="./signup.html" class="signup">註冊</a></li>
             <li><a href="#" class="forget">忘記密碼？</a></li>
         </div>
-        </div> 
+        </div>
+    </div>     
     </section>
-</div>    
     <footer class="footer-main">
         <ul>
             <li>
@@ -94,4 +123,6 @@
     </footer>
     <footer class="footer-copyright">© 2021 BrosCoffee. All rights reserved. Design by Gabrielle</footer>
     <div class="chat-box"><i class="fas fa-comment icon-chat"></i>chat</div>
+</div>
 </body>
+</html>

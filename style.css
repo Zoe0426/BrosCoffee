@@ -6,13 +6,27 @@ html,body{
 body{
     font-family:serif
 }
-
+/* ===== layout ===== */
 .wrapper{
     min-height: 100%;
 }
-    
-.logo {
-    background-image: url(./img/logo2.png);
+
+.desktop-nav{
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    background-image: url(./img/nav.jpg);
+    align-items: flex-end;
+}
+
+.logo{
+    background-image: url(./img/logo2-black.png);
     text-indent: 101%;
     width: 180px;
     height: 86px;
@@ -22,29 +36,17 @@ body{
     cursor: pointer;
 }
 
-.desktop-nav{
-    display: block;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    background-color: black;
-}
-
 .navbar-list a{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 .navbar-list li{
     display: inline-block;
-    margin-right: 10px;
-    font-size: 18px;
-    text-align:center;
+    margin-right: 15px;
+    font-size: 20px;
+    align-items: flex-end;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -59,7 +61,27 @@ body{
 
 .navbar-list{
     margin-top: 15px;
-    color: white;
+    color: black;
+}
+
+.dropdown-hover{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.452);
+}
+
+
+.dropdown li{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.dropdown li:last-child{
+    margin-bottom: 0;
 }
 
 .footer-main li{
@@ -114,6 +136,136 @@ body{
 }
 
 /* ====== index ====== */
+.logo-index {
+    background-image: url(./img/logo2.png);
+    text-indent: 101%;
+    width: 180px;
+    height: 86px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.desktop-nav-index{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #333333;
+    padding: 0 200px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-list-index li{
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.navbar-list-index a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    margin: 0;
+}
+
+.navbar-list-index a:hover{
+    color: tomato;
+}
+
+.navbar-list-index ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.dropdown-hover-index{
+    background-color: #222222;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+.dropdown-index li{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.dropdown-index li:last-child{
+    margin-bottom: 0;
+}
+
+.menu>li:hover ul{
+    display: block;
+}
+
+.ad{
+    position: fixed;
+    top: 150px;
+    left: 700px;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.title-ad{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 2em;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+.close-ad{
+    font-size: 2em;
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    color: rgba(0, 0, 0, 0.24);
+}
+
+.close-ad:hover{
+    color: rgba(0, 0, 0, 0.37)
+}
+
+.ad p{
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
 .jumbotron{
     background-image: url(./img/bg2.jpeg);
     background-size: cover;
@@ -131,7 +283,7 @@ body{
 }
 
 header h1{
-    font-family:cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 95px;
     margin-bottom: 10px;
 }
@@ -285,7 +437,10 @@ header h4{
     flex: none;
 }
 
-.products-name{
+.products-name1,
+.products-name2,
+.products-name3,
+.products-name4{
     background-color: #404B5D;
     width: 200px;
     height: 80px;
@@ -298,19 +453,16 @@ header h4{
     border-radius: 50px;
 }
 
-.products-name:hover{
-    background-color: #404B5D;
-    width: 200px;
-    height: 80px;
-    font-size: 30px;
-    color: honeydew;
-    text-align: center;
-    line-height: 80px;
-    letter-spacing: 3px;
-    cursor: pointer;
-    border-radius: 50px;
-    transform: scale(0.9);
-    transition: all 0.5s ease;
+.products-name2{
+    animation-duration: 1.5s;
+}
+
+.products-name3{
+    animation-duration: 2s;
+}
+
+.products-name4{
+    animation-duration: 2.5s;
 }
 
 .products-text{
@@ -339,59 +491,6 @@ header h4{
 }
 
 /* ====== login ====== */
-.desktop-nav2{
-    position: relative;
-    display: block;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0; 
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    background-image: url(./img/nav.jpg);
-}
-
-.logo2{
-    background-image: url(./img/logo2-black.png);
-    text-indent: 101%;
-    width: 180px;
-    height: 86px;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.navbar-list2 a{
-    text-decoration: none;
-    color:black;
-}
-
-.navbar-list2 li{
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align:center;
-    cursor: pointer;
-}
-
-.navbar-list2 a:hover{
-    color: tomato;
-    transition: all .3s ease;
-}
-.navbar-list2 li:hover{
-    color: tomato; 
-    transition: all .3s ease;
-}
-
-.navbar-list2{
-    margin-top: 15px;
-    color: black;
-}
-
 .user{
     margin-top: 86px;
 }
@@ -401,10 +500,15 @@ header h4{
     padding: 50px;
 }
 
+.contain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0 150px 0;
+}
+
 form{
     width: 1000px;
-    /* height: 300px; */
-    /* text-align: center; */
     margin: 0 auto;
 }
 
@@ -415,7 +519,6 @@ form p{
 input{
     width: 100%;
     height: 50px;
-    /* margin-bottom: 20px; */
     color: black;
     border: 1px solid #ddd;
     padding: 0 10px;
@@ -483,10 +586,6 @@ input:active,input:focus{
 label{
     margin-bottom: 10px;
     display: block;
-}
-
-.sex{
-    /* display: flex; */
 }
 
 .male{
