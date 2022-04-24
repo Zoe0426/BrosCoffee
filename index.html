@@ -31,6 +31,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- main js -->
     <script src="./JavaScript/main.js"></script> 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./basic.css">
     <link rel="stylesheet" href="./style.css">
@@ -85,7 +87,7 @@
             </ul>
         </div>
     </nav>
-    <div class="ad">
+    <!-- <div class="ad">
         <div class="title-ad">反詐騙提醒</div>
         <div class="close-ad"><i class="fa-solid fa-circle-xmark"></i></div>
         <p>
@@ -98,7 +100,7 @@
             接獲可疑電話請直接接掛斷<br>
             並打165反詐騙專線報案
         </p>
-    </div>
+    </div> -->
     <header>
         <div class="jumbotron">
             <h1>Bros Coffee</h1>
@@ -114,54 +116,41 @@
         <div class="story-img"></div>
     </section>
     <section class="shop">
-        <div class="card-shop">
-            <a href="#">
-            <div class="shop-img">
-                <img src="./img/門市.jpg" alt="">
-            </div>
-            <div class="shop-text">
-                <h3 id="shop-name">大安門市</h3>
-                <p>台北市大安區復興南路一段321號</p>   
-                <p>02-2704-9464</p>
-                <div class="shop-btn">
-                    <button>
-                    <a href="#">
-                        <i class="fas fa-map-marker-alt icon-location"></i>
-                    </a>
-                   </button>
-                    <button>
-                    <a href="#">
-                        <i class="fas fa-mug-hot icon-menu"></i>
-                    </a>
-                    </button>
-                </div>
-            </div>
-            </a>
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><a href="#"><img src="./img/門市1.jpg" alt=""></a>
+        <div class="shop-btn">
+            <button><a href="https://www.facebook.com/broscoffeeshop/"><i class="fab fa-facebook-square icon-socialMedia"></i></a></button>
+            <button><a href="https://www.instagram.com/broscoffeeshop/"><i class="fab fa-instagram-square icon-socialMedia"></i></a></button>
+            <button class="menu"><a href="#"></a>Menu</button>
         </div>
-        <div class="card-shop">
-            <a href="#">
-            <div class="shop-img">
-                <img src="./img/門市2.jpg" alt="">
-            </div>
-            <div class="shop-text">
-                <h3 id="shop-name">松江門市</h3>
-                <p>台北市大安區復興南路一段321號</p>   
-                <p>02-2704-9464</p>
-                <div class="shop-btn">
-                    <button>
-                    <a href="#">
-                        <i class="fas fa-map-marker-alt icon-location"></i>
-                    </a>
-                   </button>
-                    <button>
-                    <a href="#">
-                        <i class="fas fa-mug-hot icon-menu"></i>
-                    </a>
-                    </button>
-                </div>
-            </div>
-            </a>
+      </div>
+      <div class="swiper-slide"><a href="#"><img src="./img/門市2.jpg" alt=""></a>
+        <div class="shop-btn">
+            <button><a href="https://www.facebook.com/broscoffeeshop/"><i class="fab fa-facebook-square icon-socialMedia"></i></a></button>
+            <button><a href="https://www.instagram.com/broscoffeeshop/"><i class="fab fa-instagram-square icon-socialMedia"></i></a></button>
+            <button class="menu"><a href="#"></a>Menu</button>
         </div>
+      </div>
+      <div class="swiper-slide"><a href="#"><img src="./img/門市3.jpg" alt=""></a>
+        <div class="shop-btn">
+            <button><a href="https://www.facebook.com/broscoffeeshop/"><i class="fab fa-facebook-square icon-socialMedia"></i></a></button>
+            <button><a href="https://www.instagram.com/broscoffeeshop/"><i class="fab fa-instagram-square icon-socialMedia"></i></a></button>
+            <button class="menu"><a href="#"></a>Menu</button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="button-prev"><i class="fa-solid fa-angle-left"></i></div>
+    <div class="button-next"><i class="fa-solid fa-angle-right"></i></div>
+  
+    </div>
     </section>
     <div class="products-title">
         <h2>產品介紹</h2>
@@ -200,10 +189,35 @@
             <li>
                 <a href="#"><i class="fab fa-line icon-socialMedia"></i></a>
             </li>
-        </ul>       
+        </ul>     
     </footer>
     <footer class="footer-copyright">© 2021 BrosCoffee. All rights reserved. Design by Gabrielle</footer>
     <div class="chat-box"><i class="fas fa-comment icon-chat"></i>chat</div>
 </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+  
+  });
+</script>
 </body>
 </html>

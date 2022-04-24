@@ -338,77 +338,83 @@ header h4{
     text-align: center;
 }
 
-.shop{
-    display: flex;
-    justify-content: center;
-    background-color: 	#cdc6c0;
-}
-
-.card-shop{
-    width: 550px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    background-color: white;
-    margin: 20px 0px 20px 80px;
-}
-
-.card-shop:hover{
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
-}
-
-.shop-img{
+.swiper{
     width: 100%;
-    display: block;
+    height: 100%;
+    padding-top: 30px;
 }
 
-.shop-text{
+.swiper-wrapper{
     position: relative;
-    padding: 10px;
-    font-size: 18px;
 }
 
-.shop-text p{
-    margin-bottom: 0;
+.swiper-slide{
+    position: relative;
 }
 
-#shop-name{
-    font-size: 30px;
-    margin-top: 0;
+.swiper-slide img{
+    display: block;
+    width: 100%;
 }
 
-.shop a{
-    text-decoration: none;
-    color: black;
+.button-prev,.button-next{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.button-prev{
+    left: 20px;
+}
+
+.button-next{
+    right: 20px;
+}
+
+.shop{
+    background-color: 	#cdc6c0;
 }
 
 .shop-btn{
     position: absolute;
-    right: 15px;
-    bottom: 15px;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.shop-btn a{
+    text-decoration: none;
+    color: #FFBF00;
 }
 
 .shop-btn button{
-    font-size: 30px;
+    font-size: 38px;
     background-color: transparent;
     border: none;
-    opacity: .7;
     transition: all .5s ease;
     position: relative;
     bottom: 0;
     cursor: pointer;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.shop-btn button:last-child{
+    background-color: #FFBF00;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    border-radius: 8px;
+    font-family: sans-serif
 }
 
 .shop-btn button:hover{
-    opacity: 1;
-    bottom: 5px;
-}
-
-.icon-location,.icon-menu{
-    color: #404B5D;
+    bottom: 6px;
 }
 
 .products-title{
