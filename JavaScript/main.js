@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    setTimeout(() => {
+        $(".close-ad").show();
+    }, 3000);
+
     $(".close-ad").click(function (e) { 
         e.preventDefault();
         $(".ad").hide();

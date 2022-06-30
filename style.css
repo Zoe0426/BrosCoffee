@@ -175,6 +175,7 @@ body{
     font-size: 20px;
     cursor: pointer;
     padding-bottom: 15px;
+    
 }
 
 .navbar-list-index a{
@@ -230,7 +231,7 @@ body{
     position: fixed;
     top: 15%;
     left: 35%;
-    width: 500px;
+    width: 600px;
     height: 500px;
     padding: 20px;
     text-align: center;
@@ -257,6 +258,7 @@ body{
 }
 
 .close-ad{
+    display: none;
     font-size: 2em;
     position: absolute;
     top: -10px;
@@ -448,7 +450,7 @@ header h4{
 .products-img{
     width: 800px;
     display: block;
-    margin: 20px 10px 20px 20px;
+    margin: 20px 10px 20px 50px;
     flex: none;
 }
 
@@ -458,11 +460,11 @@ header h4{
 .products-name4{
     background-color: #404B5D;
     width: 200px;
-    height: 80px;
+    height: 70px;
     font-size: 30px;
     color: honeydew;
     text-align: center;
-    line-height: 80px;
+    line-height: 70px;
     letter-spacing: 3px;
     cursor: pointer;
     border-radius: 50px;
