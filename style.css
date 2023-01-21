@@ -507,6 +507,10 @@ header h4{
     color: honeydew;
 }
 
+.carousel-inner{
+    display: flex;
+}
+
 /* ====== login ====== */
 .user{
     margin-top: 86px;
